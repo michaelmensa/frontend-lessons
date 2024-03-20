@@ -42,8 +42,8 @@ At the end of this project, you are expected to be able to explain to anyone, wi
     - Understand the best practices for structuring HTML pages, including organizing content, using proper indentation, and maintaining code cleanliness.
 
 ### Links
-- [1](https://intranet.alxswe.com/rltoken/3ZeSykXeV9rQhzFiW5GHcg)
-- [2](https://intranet.alxswe.com/rltoken/XWdv6hMca_9jks7PN2gsbA)
-- [3](https://intranet.alxswe.com/rltoken/H59e408ohxV9x_tYOWSxvg)
-- [4](https://intranet.alxswe.com/rltoken/u6RvQ_45Xpw82Awl82NZcg)
-- [5](https://intranet.alxswe.com/rltoken/6SV9Z98vlb8iehxHnl9YJg)
+- [1](https://html.spec.whatwg.org/multipage/)
+- [2](https://developer.mozilla.org/en-US/docs/Web/HTML)
+- [3](https://htmlreference.io/)
+- [4](https://caniuse.com/)
+- [5](https://websitesetup.org/html5-cheat-sheet/)

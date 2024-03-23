@@ -14,3 +14,4 @@
 - [understanding mobile first design](https://fredericgonzalo.com/en/understanding-the-difference-between-mobile-first-adaptive-and-responsive-design/)
 - [Lukew.com](https://www.lukew.com/ff/entry.asp?933)
 - [Bytes](https://bytes.dev/?s=rwd)
+- [responsive breakpoinst](https://www.responsivebreakpoints.com/)

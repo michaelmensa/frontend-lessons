@@ -1,0 +1,5 @@
+.count {
+    display: inline-flex;
+    text-align: right;
+    font-weight: bold;
+}

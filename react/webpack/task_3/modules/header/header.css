@@ -1,0 +1,9 @@
+h1 {
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+.logo {
+    width: 200px;
+    height: 200px;
+}

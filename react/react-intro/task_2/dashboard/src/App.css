@@ -46,7 +46,7 @@ html {
   color: var(--text-color-black);
 }
 
-.App-body p {
+.App-body p, label {
   padding: 20px;
 }
 

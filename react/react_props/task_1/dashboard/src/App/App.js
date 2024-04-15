@@ -1,29 +1,41 @@
-import logo from '../assets/holberton-logo.jpg';
+import Notifications from '../Notifications/Notifications';
+import Header from '../Header/Header';
+import Footer from '../Footer/Footer';
+import Login from '../Login/Login';
+import CourseList from '../CourseList/CourseList';
+import PropTypes from 'prop-types';
 import './App.css';
-import { getFooterCopy, getFullYear } from '../utils/utils';
 
-function App() {
-  return (
-    <div className="container">
-      <div className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <h1>School dashboard</h1>
-      </div>
-      <div className="App-body">
-        <p>Login to access the full dashboard</p>
-        <label>Email: 
-          <input for="email" type="email"></input>
-        </label>
-        <label>Password: 
-          <input for="password" type="password"></input>
-        </label>
-        <button>OK</button>
-      </div>
-      <div className="App-footer">
-        <p>Copyright {getFullYear()} - {getFooterCopy()}</p>
-      </div>
+function App({ isLoggedIn }) {
+  if (isLoggedIn === false) {
+    return (
+      <>
+    <div className="App">
+      <Notifications />
+      <Header />
+      <Login />
+      <Footer />
     </div>
-  );
+    </>
+    )
+  }
+  else {
+    return (
+      <>
+      <div className="App">
+        <Notifications />
+        <Header />
+        <CourseList />
+        <Footer />
+      </div>
+      </>
+    );
+  }
+}
+
+
+App.PropTypes = {
+  isLoggedIn: PropTypes.bool,
 }
 
 export default App;

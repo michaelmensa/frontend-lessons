@@ -12,52 +12,9 @@
     font-size: 62.5%;
   }
   
-  .container {
+  .App {
     display: flex;
     flex-direction: column;
     min-height: 100vh; /* Ensure container takes up at least the full viewport height */
-  }
-  
-  .App-header {
-    border-bottom: 1px solid var(--text-color-red); /* Red border on bottom */
-  }
-  
-  .App-header img {
-    width: 100px;
-    height: 100px;
-  }
-  
-  .App-header h1 {
-    color: var(--text-color-red);
-    position: relative;
-    text-align: center;
-    display: inline-block;
-    padding: 0.5em;
-    bottom: 2.5em;
-  }
-  
-  .App-header,
-  .App-footer {
-    padding: 0;
-  }
-  
-  .App-body {
-   flex: 1;
-    color: var(--text-color-black);
-  }
-  
-  .App-body p, label {
-    padding: 20px;
-  }
-  
-  .App-footer {
-    color: var(--text-color-black);
-    text-align: center;
-    font-style: italic;
-    border-top: 1px solid var(--text-color-red); /* Red border on top */
-  }
-  
-  .App-footer p {
-    position: relative;
   }
   

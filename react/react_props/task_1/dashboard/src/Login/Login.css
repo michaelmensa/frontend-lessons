@@ -1,0 +1,8 @@
+.App-body {
+    flex: 1;
+     color: var(--text-color-black);
+   }
+   
+   .App-body p, label {
+     padding: 20px;
+   }

@@ -6,7 +6,7 @@ import CourseList from '../CourseList/CourseList';
 import PropTypes from 'prop-types';
 import './App.css';
 
-function App({ isLoggedIn }) {
+function App({ isLoggedIn=false }) {
   if (isLoggedIn === false) {
     return (
       <>

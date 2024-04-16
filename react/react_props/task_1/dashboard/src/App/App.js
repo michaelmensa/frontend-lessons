@@ -6,7 +6,28 @@ import CourseList from '../CourseList/CourseList';
 import PropTypes from 'prop-types';
 import './App.css';
 
-function App({ isLoggedIn=false }) {
+function App(props) {
+
+  const { isLoggedIn=false } = props;
+
+  const listCourses = [
+    {
+      id: 1,
+      name: 'ES6',
+      credit: 60
+    }, 
+    {
+      id: 2,
+      name: 'Webpack',
+      credit: 20
+    },
+    {
+      id: 3,
+      name: 'React',
+      credit: 40
+    }
+  ];
+
   if (isLoggedIn === false) {
     return (
       <>
@@ -25,7 +46,7 @@ function App({ isLoggedIn=false }) {
       <div className="App">
         <Notifications />
         <Header />
-        <CourseList />
+        <CourseList listCourses={listCourses} />
         <Footer />
       </div>
       </>

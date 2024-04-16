@@ -14,7 +14,10 @@ const buttonCss = {
     cursor: 'pointer'
 };
 
-function Notifications({ displayDrawer=false }) {
+function Notifications(props) {
+
+    const { displayDrawer=false } = props;
+
     const handleClick = () => {
         console.log('Close button has been clicked');
     };

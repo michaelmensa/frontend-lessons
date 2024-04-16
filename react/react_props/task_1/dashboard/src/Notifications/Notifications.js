@@ -4,6 +4,7 @@ import NotificationItem from './NotificationItem';
 import close from '../assets/close-icon.png';
 import { getLatestNotification } from '../utils/utils';
 import PropTypes from 'prop-types';
+import NotificationItemShape from './NotificationItemShape';
 
 const buttonCss = {
     position: 'absolute',
@@ -16,7 +17,7 @@ const buttonCss = {
 
 function Notifications(props) {
 
-    const { displayDrawer=false } = props;
+    const { displayDrawer, listNotifications } = props;
 
     const handleClick = () => {
         console.log('Close button has been clicked');
@@ -37,9 +38,13 @@ function Notifications(props) {
                 </button>
                 <p>Here is the list of notifications</p>
                 <ul>
-                    <NotificationItem type='default' value='New course available'/>
-                    <NotificationItem type='urgent' value='New resume available'/>
-                    <NotificationItem type='urgent' html={{ __html: getLatestNotification() }}/>
+                    {listNotifications.length === 0 ? (
+                        <p>No new notification for now</p>
+                    ) : (
+                        listNotifications.map(notification => (
+                            <NotificationItem key={notification.id} type={notification.type} html={notification.__html} value={notification.value} />
+                        ))
+                    )}
                 </ul>
             </div>
             </>
@@ -55,6 +60,12 @@ function Notifications(props) {
 
 Notifications.PropTypes = {
     displayDrawer: PropTypes.bool,
+    listNotifications: PropTypes.arrayOf(NotificationItemShape)
 };
+
+Notifications.defaultProps = {
+    displayDrawer: false,
+    listNotifications: []
+}
 
 export default Notifications;

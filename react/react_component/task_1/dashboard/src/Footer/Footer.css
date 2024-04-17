@@ -1,0 +1,11 @@
+.App-footer {
+    color: var(--text-color-black);
+    text-align: center;
+    font-style: italic;
+    border-top: 1px solid var(--text-color-red); /* Red border on top */
+    padding: 0;
+  }
+  
+  .App-footer p {
+    position: relative;
+  }

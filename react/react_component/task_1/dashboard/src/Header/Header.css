@@ -1,0 +1,21 @@
+.App-header {
+    border-bottom: 1px solid #d73953; /* Red border on bottom */
+  }
+  
+  .App-header img {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .App-header h1 {
+    color: #d73953;
+    position: relative;
+    text-align: center;
+    display: inline-block;
+    padding: 0.5em;
+    bottom: 2.5em;
+  }
+  
+  .App-header {
+    padding: 0;
+  }

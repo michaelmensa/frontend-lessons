@@ -2,7 +2,9 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import './NotificationItem.css'
 
-function NotificationItem({ type, html, value }) {
+function NotificationItem(props) {
+
+    const { type, html, value } = props;
     
     return (
         <li
@@ -18,8 +20,12 @@ NotificationItem.PropTypes = {
     type: PropTypes.string.isRequired,
     value: PropTypes.string,
     html: PropTypes.objectOf({
-        _html: PropTypes.string
+        __html: PropTypes.string
     })
+}
+
+NotificationItem.defaultProps = {
+    type: 'default'
 }
 
 export default NotificationItem;

@@ -38,7 +38,7 @@ function CourseList(props) {
     );
 }
 
-CourseList.PropTypes = {
+CourseList.propTypes = {
     listCourses: PropTypes.arrayOf(CourseShape)
 };
 
